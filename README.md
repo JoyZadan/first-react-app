@@ -23,6 +23,7 @@ While it's not an absolute requirement to use Node, React and Node are often tig
 
 [Learn more about NPM here](https://www.npmjs.com/)
 
+---
 ## How to create your first React App
 * Create a repository on GitHub
 * Create a GitPod workspace from it
@@ -44,3 +45,15 @@ Just like that, we now have a complete React app ready to go and we're ready to 
 * If you are using GitPod, you have to add the `--use-npm` when running the `create-react-app` command because by default, GitPod will use **yarn**, a different package manager.
 * To stop the server, use **CTRL/CMD + C**
 
+---
+## React Developer Tools
+Install React Developer Tools from Chrome Extensions.
+
+The reason we need the React developer tools is because sometimes we want to be able to examine and tweak the actual React application we're building, rather than the HTML it generates.
+
+The first thing to notice with React Developer Tools is that it's a great way to identify a site that uses React. Whenever you're on a site that uses React, the icon will be lit up in either blue or orange.
+* 🔷 If it's blue, it means that the site is running the production build of React, which is the optimized version.
+* 🔶 If it's orange it means that it's running the unoptimized development version.
+
+---
+Next: See [**React Components**](https://github.com/JoyZadan/ci-react-core-react-components)
