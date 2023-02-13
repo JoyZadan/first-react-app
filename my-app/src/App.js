@@ -1,25 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import FunctionalGreeting from "./components/FunctionalGreeting";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            {/* This component is totally independent and won't have
+            any other content except what it renders itself, so it
+            doesn't need a closing tag, we just close it with a space slash */}
+            <FunctionalGreeting />
+        </div>
+    );
 }
 
 export default App;
