@@ -15,4 +15,4 @@ const FunctionalGreeting = () => <h1>Hello from React!</h1>
 
 
 // exports the function to include the component with the rest of the application
-export default FunctionalGreeting
+export default FunctionalGreeting;

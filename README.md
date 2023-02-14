@@ -160,4 +160,59 @@ Next: **Adding props to our stateless functional component**
 
 ## Adding props to our stateless functional component
 
+**Props** (short for properties)
+* they are specified as attributes to the component (just like you would specify any other HTML attribute such as class or ID)
+* represent the parameters you pass into your React component
+* to tell it what it renders
+* and how
+
+❗**Steps to Duplicating Components:**
+1. Create a duplicate of the functional greeting component
+2. Rename it to FunctionalGreetingWithProps
+3. Inside the file, change the name of the function, and the name of the export to match
+4. Go to App.js, import the FunctionalGreetingWithProps component
+5. Then include it underneath the  regular functional greeting component
+
+❗ **Adding a prop:** <br/>
+1. In **App.js** file, add a prop called *greeting* and set its value to *Nice to meet you!*
+```javascript
+<FunctionalGreetingWithProps greeting="Nice to meet you!"/>
+```
+2. to actually use the new prop, we have to retrieve it in the **FunctionalGreetingWithProps.js** component, see below:
+`(props)`
+
+```javascript
+const FunctionalGreetingWithProps = (props) => {
+    return <h1>Hello! {props.greeting}</h1>;
+}
+
+```
+3. render it as part of the JSX
+`{props.greeting}`
+
+❗<u>Any time  you want to use a prop, a JavaScript variable or any kind of JavaScript expression in your JSX, all you need to do is wrap it in {curly braces}.</u>
+
+![Adding, Retrieving and Rendering Props](./documentation/adding-retrieving-rendering-props.png)
+
+
+**Passing additional props to your component:**
+* In the **App.js** file, separate the additional props using spaces:
+    ```javascript
+    <FunctionalGreetingWithProps greeting="Nice to meet you!" name="Mike" age="32" />
+    ```
+
+* In **FunctionalGreetingWithProps.js** component:
+    ```javascript
+    	const FunctionalGreetingWithProps = (props) => {
+            console.log(props);
+            return <h1>Hello, {props.name}! I see you're {props.age}; {props.greeting}! </h1>;
+        }
+    ```
+
+[**Finished Source Code Repo**](https://github.com/Code-Institute-Solutions/gitpod-react/tree/b7e7da047b80911501e57d6dfb9ae090ad4c5dee/my-app/src)
+
+---
+Next: **Using Functional Components Challenge**
+
+---
 
